@@ -248,7 +248,7 @@ if has("gui_running")
         " make Mac's Option key behave as the Meta key
         set invmmta
         try
-          set transparency=5
+          set transparency=0
         catch
         endtry
     endif
@@ -383,8 +383,9 @@ map <C-l> <C-w>l
 nmap <C-s> :w<CR>
 
 "key mapping for tab navigation
-nmap <Tab> gt
-nmap <S-Tab> gT
+nmap <S-Tab> gt
+"nmap <Tab> gT
+""disabling this mapping because conflicts with jumplist's CTRL-I or TAB.
 
 "Key mapping for textmate-like indentation
 nmap <D-[> <<
