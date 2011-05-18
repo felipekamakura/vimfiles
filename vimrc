@@ -236,7 +236,7 @@ if has("gui_running")
     if has("gui_gnome")
         set term=gnome-256color
         colorscheme vividchalk
-        set guifont=Monospace\ Bold\ 12
+        set guifont=Monospace\ Bold\ 10
     endif
 
     if has("gui_mac") || has("gui_macvim")
@@ -244,7 +244,7 @@ if has("gui_running")
         " key binding for Command-T to behave properly
         " uncomment to replace the Mac Command-T key to Command-T plugin
         "macmenu &File.New\ Tab key=<nop>
-        "map <D-t> :CommandT<CR>
+		"map <D-t> :CommandT<CR>
         " make Mac's Option key behave as the Meta key
         set invmmta
         try
